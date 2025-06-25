@@ -1,0 +1,13 @@
+header.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 60px;
+    align-items: center;
+}
+
+header.pageHeader > nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}

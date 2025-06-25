@@ -1,21 +1,18 @@
 import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-import axios from "axios"
+import './index.css'
+// import { useEffect, useState } from "react"
+// import axios from "axios"
 
 const Header = () => {
-    let [threadList, setThreadList] = useState([])
-
-    useEffect(()=>{
-        axios.get('http://localhost:8000/').then(res => console.log(res.data))
-    }, [])
-
-    return (<header>
+    return (<header className="pageHeader">
         <h2>
             Forum
         </h2>
         
         <nav>
-            <a to={{pathname: "thread", search: "q"}} href="thread?t=q">q</a>
+            <a href="thread?t=q">/q</a>
+            <a href="thread?t=a">/a</a>
+            {/* to={{pathname: "thread", search: "q"}} */}
         </nav>
 
     </header>)
